@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    --Red: hsl(0, 100%, 74%);
+    --Green: hsl(154, 59%, 51%);
+    --Blue: hsl(248, 32%, 49%);
+    --Dark-Blue: hsl(249, 10%, 26%);
+    --Grayish-Blue: hsl(246, 25%, 77%);
+    --white: #fff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(./images/bg-intro-desktop.png);
+    background-color: var(--Red);
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    padding: 5rem;
+}
+
+.left, .right{
+    flex-basis: 50%;
+}
+
+.left{
+    padding: 10rem 2rem 4rem 25rem;
+}
+
+.right{
+    padding: 10rem 10rem 4rem 2rem;
+}
+
+h1{
+    color: var(--white);
+    font-size: 40px;
+    line-height: 45px;
+}
+
+p{
+    color: var(--white);
+}
+
+.offert{
+    background-color: var(--Blue);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    text-align: center;
+    color: var(--white);
+    margin-bottom: 1rem;
+    width: 75%;
+    box-shadow: 2.5px 8px 4px 0.5px #474747a0
+}
+
+.text-bold{
+    font-weight: 700;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    width: 70%;
+    box-shadow: 2.5px 8px 4px 0.5px #474747a0
+}
+
+input{
+    margin-bottom: 1rem;
+    border-radius: 0.3rem;
+    padding: 1rem 0.5rem;
+}
+
+button{
+    background-color: var(--Green);
+    color: var(--white);
+    padding: 1rem 0rem;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    border: none;
+    text-transform:uppercase ;
+    cursor: pointer;
+}
+
+.terms{
+    font-size: 11px;
+    color: var(--Grayish-Blue);
+}
+
+#terms-bold{
+    color: var(--Red);
+}
+
+.warnings{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: var(--Red);
+    padding-top: 20px;
+}
+
+.attribution{ 
+    font-size: 12px; text-align: center; 
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+@media (max-width:600px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+    .left{
+        padding: 0;
+    }
+    
+    .right{
+        padding: 0;
+    }
+
+    #description{
+        margin-bottom: 3rem;
+    }
+}
